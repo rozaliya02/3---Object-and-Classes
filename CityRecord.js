@@ -1,5 +1,10 @@
 function solve(input) {
-  let data = input.map(row => row.split(" | ").filter(x => x != ""));
+  let data = input.map(row =>
+    row
+      .split("")
+      .filter(x => x != "")
+      .map(x => x.trim())
+  );
   console.log(data);
 }
 solve([
